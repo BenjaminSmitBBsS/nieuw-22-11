@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Multi-Deploy — BBs Solutions</title>
+  <meta name="description" content="Demo: één Git origin, automatisch live op Cloudflare én Vercel.">
+  <style>
+    :root { --color-primary: #1e3a8a; --color-accent: #f59e0b; --color-bg: #f8fafc; --color-text: #0f172a; --radius: 12px; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; background: var(--color-bg); color: var(--color-text); line-height: 1.6; }
+    .page { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .page__title { color: var(--color-primary); }
+    .page__lead { font-size: 1.15rem; margin: 1rem 0 2rem; }
+    .card { background: #fff; border-radius: var(--radius); padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #e2e8f0; }
+    .card__title { color: var(--color-accent); margin-bottom: .5rem; }
+    .card__list { padding-left: 1.2rem; }
+    .badge { display: inline-block; padding: .15rem .6rem; margin: .2rem .3rem .2rem 0; background: var(--color-primary); color: #fff; border-radius: 999px; font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1 class="page__title">Demo Multi-Deploy</h1>
+    <p class="page__lead">
+      Eén codebase in Git origin, automatisch live op
+      <span class="badge">Cloudflare</span>
+      <span class="badge">Vercel</span>
+    </p>
+    <section class="card">
+      <h2 class="card__title">Waarom deze opzet</h2>
+      <ul class="card__list">
+        <li>GitHub is de enige bron van waarheid (origin).</li>
+        <li>Elke push naar <code>main</code> triggert een deploy op beide platformen.</li>
+        <li>Bewerken kan met Cursor, Cline AI, Devin AI of direct op de server.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2 class="card__title">Workflow</h2>
+      <ol class="card__list">
+        <li>Bewerk de code (Cursor, Cline of Devin).</li>
+        <li><code>git add . && git commit -m "Wijziging" && git push</code></li>
+        <li>Cloudflare en Vercel deployen binnen ±1 minuut automatisch.</li>
+      </ol>
+    </section>
+    <footer><p>BBs Solutions — demo pagina.</p></footer>
+  </main>
+</body>
+</html>
